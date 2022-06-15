@@ -1,4 +1,4 @@
-public class Actor
+ï»¿public class Actor
 {
     public int id;
     public string name;
@@ -9,7 +9,7 @@ public class Actor
 
     public string Talk()
     {
-        return "´ëÈ­¸¦ °É¾ú½À´Ï´Ù.";
+        return "ëŒ€í™”ë¥¼ ê±¸ì—ˆìŠµë‹ˆë‹¤.";
     }
 
     public string HasWeapon()

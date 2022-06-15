@@ -1,11 +1,11 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    string title = "Àü¼³ÀÇ";
-    string playerName = "³ª°Ë»ç";
+    string title = "ì „ì„¤ì˜";
+    string playerName = "ë‚˜ê²€ì‚¬";
     int level = 5;
     float strength = 15.5f;
     int exp = 1500;
@@ -17,47 +17,47 @@ public class NewBehaviourScript : MonoBehaviour
     {
         Debug.Log("Hello Unity!");
 
-        //1. º¯¼ö
+        //1. ë³€ìˆ˜
         /*
         int level = 5;
         float strength = 15.5f;
-        string playerName = "³ª°Ë»ç";
+        string playerName = "ë‚˜ê²€ì‚¬";
         bool isFullLevel = true;
         */
 
-        Debug.Log("¿ë»çÀÇ ÀÌ¸§Àº?");
+        Debug.Log("ìš©ì‚¬ì˜ ì´ë¦„ì€?");
         Debug.Log(playerName);
-        Debug.Log("¿ë»çÀÇ ·¹º§Àº?");
+        Debug.Log("ìš©ì‚¬ì˜ ë ˆë²¨ì€?");
         Debug.Log(level);
-        Debug.Log("¿ë»çÀÇ ÈûÀº?");
+        Debug.Log("ìš©ì‚¬ì˜ í˜ì€?");
         Debug.Log(strength);
-        Debug.Log("¿ë»ç´Â ¸¸·¾ÀÎ°¡?");
+        Debug.Log("ìš©ì‚¬ëŠ” ë§Œë ™ì¸ê°€?");
         Debug.Log(isFullLevel);
 
-        //2. ±×·ìÇü º¯¼ö
-        string[] monsters = { "½½¶óÀÓ", "»ç¸·¹ì", "¾Ç¸¶" };
+        //2. ê·¸ë£¹í˜• ë³€ìˆ˜
+        string[] monsters = { "ìŠ¬ë¼ì„", "ì‚¬ë§‰ë±€", "ì•…ë§ˆ" };
         int[] monsterLevel = new int[3];
         monsterLevel[0] = 1;
         monsterLevel[1] = 6;
         monsterLevel[2] = 20;
 
-        Debug.Log("¸Ê¿¡ Á¸ÀçÇÏ´Â ¸ó½ºÅÍ");
+        Debug.Log("ë§µì— ì¡´ì¬í•˜ëŠ” ëª¬ìŠ¤í„°");
         Debug.Log(monsters[0]);
 
-        Debug.Log("¸Ê¿¡ Á¸ÀçÇÏ´Â ¸ó½ºÅÍ ·¹º§");
+        Debug.Log("ë§µì— ì¡´ì¬í•˜ëŠ” ëª¬ìŠ¤í„° ë ˆë²¨");
         Debug.Log(monsterLevel[0]);
 
         List<string> items = new List<string>();
-        items.Add("»ı¸í¹°¾à30");
-        items.Add("¸¶³ª¹°¾à30");
+        items.Add("ìƒëª…ë¬¼ì•½30");
+        items.Add("ë§ˆë‚˜ë¬¼ì•½30");
 
-        Debug.Log("°¡Áö°í ÀÖ´Â ¾ÆÀÌÅÛ");
+        Debug.Log("ê°€ì§€ê³  ìˆëŠ” ì•„ì´í…œ");
         Debug.Log(items[0]);
         Debug.Log(items[1]);
 
         //items.RemoveAt(0);
 
-        //3. ¿¬»êÀÚ
+        //3. ì—°ì‚°ì
         //int exp = 1500;
 
         exp = 1500 + 320;
@@ -65,91 +65,91 @@ public class NewBehaviourScript : MonoBehaviour
         level = exp / 300;
         strength = level * 3.1f;
 
-        Debug.Log("¿ë»çÀÇ ÃÑ °æÇèÄ¡´Â?");
+        Debug.Log("ìš©ì‚¬ì˜ ì´ ê²½í—˜ì¹˜ëŠ”?");
         Debug.Log(exp);
-        Debug.Log("¿ë»çÀÇ ·¹º§Àº?");
+        Debug.Log("ìš©ì‚¬ì˜ ë ˆë²¨ì€?");
         Debug.Log(level);
-        Debug.Log("¿ë»çÀÇ ÈûÀº?");
+        Debug.Log("ìš©ì‚¬ì˜ í˜ì€?");
         Debug.Log(strength);
 
         int nextExp = 300 - (exp % 300);
-        Debug.Log("´ÙÀ½ ·¹º§±îÁö ³²Àº °æÇèÄ¡´Â?");
+        Debug.Log("ë‹¤ìŒ ë ˆë²¨ê¹Œì§€ ë‚¨ì€ ê²½í—˜ì¹˜ëŠ”?");
         Debug.Log(nextExp);
 
-        //string title = "Àü¼³ÀÇ";
-        Debug.Log("¿ë»çÀÇ ÀÌ¸§Àº?");
+        //string title = "ì „ì„¤ì˜";
+        Debug.Log("ìš©ì‚¬ì˜ ì´ë¦„ì€?");
         Debug.Log(title + " " + playerName);
 
         int fullLevel = 99;
         isFullLevel = level == fullLevel;
-        Debug.Log("¿ë»ç´Â ¸¸·¾ÀÔ´Ï±î? " + isFullLevel);
+        Debug.Log("ìš©ì‚¬ëŠ” ë§Œë ™ì…ë‹ˆê¹Œ? " + isFullLevel);
 
         bool isEndTutorial = level > 10;
-        Debug.Log("Æ©Åä¸®¾óÀÌ ³¡³­ ¿ë»çÀÔ´Ï±î? " + isEndTutorial);
+        Debug.Log("íŠœí† ë¦¬ì–¼ì´ ëë‚œ ìš©ì‚¬ì…ë‹ˆê¹Œ? " + isEndTutorial);
 
         //int health = 30;
         //int mana = 25;
         // bool isBadCondition = health <= 50 && mana <= 20;
         bool isBadCondition = health <= 50 || mana <= 20;
-        //Debug.Log("¿ë»çÀÇ »óÅÂ°¡ ³ª»Ş´Ï±î? " + isBadCondition);
+        //Debug.Log("ìš©ì‚¬ì˜ ìƒíƒœê°€ ë‚˜ì©ë‹ˆê¹Œ? " + isBadCondition);
 
-        string condition = isBadCondition ? "³ª»İ" : "ÁÁÀ½";
-        Debug.Log("¿ë»çÀÇ »óÅÂ°¡ ³ª»Ş´Ï±î? " + condition);
+        string condition = isBadCondition ? "ë‚˜ì¨" : "ì¢‹ìŒ";
+        Debug.Log("ìš©ì‚¬ì˜ ìƒíƒœê°€ ë‚˜ì©ë‹ˆê¹Œ? " + condition);
 
-        //4.Å°¿öµå
+        //4.í‚¤ì›Œë“œ
         //int float string bool new list
 
-        //5. Á¶°Ç¹®
-        if (condition == "³ª»İ")
+        //5. ì¡°ê±´ë¬¸
+        if (condition == "ë‚˜ì¨")
         {
-            Debug.Log("ÇÃ·¹ÀÌ¾î »óÅÂ°¡ ³ª»Ú´Ï ¾ÆÀÌÅÛÀ» »ç¿ëÇÏ¼¼¿ä");
+            Debug.Log("í”Œë ˆì´ì–´ ìƒíƒœê°€ ë‚˜ì˜ë‹ˆ ì•„ì´í…œì„ ì‚¬ìš©í•˜ì„¸ìš”");
         }
         else
         {
-            Debug.Log("ÇÃ·¹ÀÌ¾î »óÅÂ°¡ ÁÁ½À´Ï´Ù.");
+            Debug.Log("í”Œë ˆì´ì–´ ìƒíƒœê°€ ì¢‹ìŠµë‹ˆë‹¤.");
         }
 
-        if (isBadCondition && items[0] == "»ı¸í¹°¾à30")
+        if (isBadCondition && items[0] == "ìƒëª…ë¬¼ì•½30")
         {
             items.RemoveAt(0);
             health += 30;
-            Debug.Log("»ı¸íÆ÷¼Ç30À» »ç¿ëÇÏ¿´½À´Ï´Ù.");
+            Debug.Log("ìƒëª…í¬ì…˜30ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.");
         }
-        else if (isBadCondition && items[0] == "¸¶³ª¹°¾à30")
+        else if (isBadCondition && items[0] == "ë§ˆë‚˜ë¬¼ì•½30")
         {
             items.RemoveAt(0);
             mana += 30;
-            Debug.Log("¸¶³ªÆ÷¼Ç30À» »ç¿ëÇÏ¿´½À´Ï´Ù.");
+            Debug.Log("ë§ˆë‚˜í¬ì…˜30ì„ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.");
         }
 
         switch (monsters[1])
         {
-            case "½½¶óÀÓ":
-            case "»ç¸·¹ì":
-                Debug.Log("¼ÒÇü ¸ó½ºÅÍ°¡ ÃâÇö");
+            case "ìŠ¬ë¼ì„":
+            case "ì‚¬ë§‰ë±€":
+                Debug.Log("ì†Œí˜• ëª¬ìŠ¤í„°ê°€ ì¶œí˜„");
                 break;
-            case "¾Ç¸¶":
-                Debug.Log("ÁßÇü ¸ó½ºÅÍ°¡ ÃâÇö");
+            case "ì•…ë§ˆ":
+                Debug.Log("ì¤‘í˜• ëª¬ìŠ¤í„°ê°€ ì¶œí˜„");
                 break;
-            case "°ñ·½":
-                Debug.Log("´ëÇü ¸ó½ºÅÍ°¡ ÃâÇö");
+            case "ê³¨ë ˜":
+                Debug.Log("ëŒ€í˜• ëª¬ìŠ¤í„°ê°€ ì¶œí˜„");
                 break;
             default:
-                Debug.Log("??? ¸ó½ºÅÍ°¡ ÃâÇö");
+                Debug.Log("??? ëª¬ìŠ¤í„°ê°€ ì¶œí˜„");
                 break;
         }
 
-        //6. ¹İº¹¹®
+        //6. ë°˜ë³µë¬¸
         while (health > 0)
         {
             health--;
             if (health > 0)
-                Debug.Log("µ¶ µ¥¹ÌÁö¸¦ ÀÔ¾ú½À´Ï´Ù. " + health);
+                Debug.Log("ë… ë°ë¯¸ì§€ë¥¼ ì…ì—ˆìŠµë‹ˆë‹¤. " + health);
             else
-                Debug.Log("»ç¸ÁÇÏ¿´½À´Ï´Ù.");
+                Debug.Log("ì‚¬ë§í•˜ì˜€ìŠµë‹ˆë‹¤.");
             if (health == 10)
             {
-                Debug.Log("ÇØµ¶Á¦¸¦ »ç¿ëÇÕ´Ï´Ù.");
+                Debug.Log("í•´ë…ì œë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤.");
                 break;
             }
         }
@@ -157,54 +157,54 @@ public class NewBehaviourScript : MonoBehaviour
         for (int count = 0; count < 10; count++)
         {
             health++;
-            Debug.Log("ºØ´ë·Î Ä¡·á Áß... " + health);
+            Debug.Log("ë¶•ëŒ€ë¡œ ì¹˜ë£Œ ì¤‘... " + health);
         }
 
         for (int index = 0; index < monsters.Length; index++)
         {
-            Debug.Log("ÀÌ Áö¿ª¿¡ ÀÖ´Â ¸ó½ºÅÍ : " + monsters[index]);
+            Debug.Log("ì´ ì§€ì—­ì— ìˆëŠ” ëª¬ìŠ¤í„° : " + monsters[index]);
         }
 
         foreach (string monster in monsters)
         {
-            Debug.Log("ÀÌ Áö¿ª¿¡ ÀÖ´Â ¸ó½ºÅÍ : " + monster);
+            Debug.Log("ì´ ì§€ì—­ì— ìˆëŠ” ëª¬ìŠ¤í„° : " + monster);
         }
         Heal();
 
         for (int i = 0; i < monsters.Length; i++)
         {
-            Debug.Log("¿ë»ç´Â " + monsters[i] + "¿ÍÀÇ ÀüÅõ¿¡¼­ " + Battle(monsterLevel[i]));
+            Debug.Log("ìš©ì‚¬ëŠ” " + monsters[i] + "ì™€ì˜ ì „íˆ¬ì—ì„œ " + Battle(monsterLevel[i]));
         }
 
-        //8. Å¬·¡½º
+        //8. í´ë˜ìŠ¤
         Player player = new Player();
         player.id = 0;
-        player.name = "³ª¹ı»ç";
-        player.title = "Çö¸íÇÑ";
+        player.name = "ë‚˜ë²•ì‚¬";
+        player.title = "í˜„ëª…í•œ";
         player.strength = 2.4f;
-        player.weapon = "³ª¹« ÁöÆÎÀÌ";
+        player.weapon = "ë‚˜ë¬´ ì§€íŒ¡ì´";
         Debug.Log(player.Talk());
         Debug.Log(player.HasWeapon());
 
         player.LevelUp();
-        Debug.Log(player.name + "ÀÇ ·¹º§Àº " + player.level + "ÀÔ´Ï´Ù.");
+        Debug.Log(player.name + "ì˜ ë ˆë²¨ì€ " + player.level + "ì…ë‹ˆë‹¤.");
 
     }
 
-    //7. ÇÔ¼ö(¸Ş¼Òµå)
+    //7. í•¨ìˆ˜(ë©”ì†Œë“œ)
     void Heal()
     {
         health += 10;
-        Debug.Log("ÈúÀ» ¹Ş¾Ò½À´Ï´Ù. " + health);
+        Debug.Log("íì„ ë°›ì•˜ìŠµë‹ˆë‹¤. " + health);
     }
 
     string Battle(int monsterLevel)
     {
         string result;
         if (level >= monsterLevel)
-            result = "ÀÌ°å½À´Ï´Ù.";
+            result = "ì´ê²¼ìŠµë‹ˆë‹¤.";
         else
-            result = "Á³½À´Ï´Ù.";
+            result = "ì¡ŒìŠµë‹ˆë‹¤.";
         return result;
     }
 
