@@ -57,8 +57,8 @@
     <Compile Include="Assets\Actor.cs" />
     <Compile Include="Assets\LifeCycle2.cs" />
     <Compile Include="Assets\LifeCycle.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\Move.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
