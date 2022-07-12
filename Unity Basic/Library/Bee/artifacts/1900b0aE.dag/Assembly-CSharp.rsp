@@ -353,12 +353,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Actor.cs"
-"Assets/LifeCycle.cs"
-"Assets/LifeCycle2.cs"
-"Assets/Move.cs"
-"Assets/NewBehaviourScript.cs"
-"Assets/Player.cs"
+"Assets/Scripts/Actor.cs"
+"Assets/Scripts/LifeCycle.cs"
+"Assets/Scripts/LifeCycle2.cs"
+"Assets/Scripts/Move.cs"
+"Assets/Scripts/MyBall.cs"
+"Assets/Scripts/NewBehaviourScript.cs"
+"Assets/Scripts/OtherBall.cs"
+"Assets/Scripts/Player.cs"
 -langversion:9.0
 
 /deterministic
