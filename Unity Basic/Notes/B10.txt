@@ -1,0 +1,17 @@
+* RigidBody
+
+스크립트에 컴포넌트 가져오기
+RigidBody의 컴포넌트를 변수로 가져와야함.
+
+1. 속도 올리기(velocity)
+@RigidBody관련 코드는 FixedUpdate에 작성
+
+2. 힘으로 밀기
+AddForce(Vec) : Vec의 방향과 크기로 힘을 줌
+ForceMode : 힘을 주는 방식(가속, 무게 반영)
+Mass 무게 값이 클수록 움직이는데 더 많은 힘이 필요
+AddForce의 힘 방향으로 계속 속도 velocity가 증가
+RigidBody를 사용한 이동은 보다 자연스럽다!
+
+3. 회전력 주기
+AddTorque(Vec) : Vec 방향을 축으로 회전력이 생김
