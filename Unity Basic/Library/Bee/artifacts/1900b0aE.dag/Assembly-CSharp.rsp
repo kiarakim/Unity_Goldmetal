@@ -354,6 +354,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/2Scripts/Actor.cs"
+"Assets/2Scripts/Coin.cs"
 "Assets/2Scripts/LifeCycle.cs"
 "Assets/2Scripts/LifeCycle2.cs"
 "Assets/2Scripts/Move.cs"
@@ -361,6 +362,7 @@
 "Assets/2Scripts/NewBehaviourScript.cs"
 "Assets/2Scripts/OtherBall.cs"
 "Assets/2Scripts/Player.cs"
+"Assets/2Scripts/PlayerBall.cs"
 -langversion:9.0
 
 /deterministic
