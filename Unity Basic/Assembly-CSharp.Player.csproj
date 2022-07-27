@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2Scripts\Coin.cs" />
     <Compile Include="Assets\2Scripts\OtherBall.cs" />
     <Compile Include="Assets\2Scripts\LifeCycle.cs" />
     <Compile Include="Assets\2Scripts\Actor.cs" />
@@ -65,7 +66,7 @@
     <Compile Include="Assets\2Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\2Scripts\LifeCycle2.cs" />
     <Compile Include="Assets\2Scripts\Move.cs" />
-    <Compile Include="Assets\2Scripts\Coin.cs" />
+    <Compile Include="Assets\2Scripts\CameraMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

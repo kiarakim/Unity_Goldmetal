@@ -8,13 +8,13 @@ public class PlayerBall : MonoBehaviour
     public int score;
     bool isJump;
     Rigidbody rigid;
-    AudioSource audio;
+    AudioSource audio1;
 
     void Awake()
     {
         isJump = false;
         rigid = GetComponent<Rigidbody>();
-        audio = GetComponent<AudioSource>();
+        audio1 = GetComponent<AudioSource>();
         
     }
 
@@ -48,7 +48,7 @@ public class PlayerBall : MonoBehaviour
         if(other.tag == "Coin")
         {
             score++;
-            audio.Play();
+            audio1.Play();
             other.gameObject.SetActive(false);
         }
     }
