@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBall : MonoBehaviour
 {
     public float jumpPower;
     public int score;
+    public GameManagerLogic manager; //Find 안쓰기 위함.
     bool isJump;
     Rigidbody rigid;
     AudioSource audio1;
@@ -50,6 +52,21 @@ public class PlayerBall : MonoBehaviour
             score++;
             audio1.Play();
             other.gameObject.SetActive(false);
+        }
+        else if (other.tag == "Finish")
+        {
+            if(score == manager.totalItemCount){
+                //Game clear! && Next Stage
+                if (manager.stage == 2)
+                    SceneManager.LoadScene(0);
+                else
+                    SceneManager.LoadScene(manager.stage + 1);
+            }
+            else {
+                //Restart
+
+                SceneManager.LoadScene(manager.stage);
+            }
         }
     }
 }

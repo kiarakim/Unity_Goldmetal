@@ -59,6 +59,7 @@
     <Compile Include="Assets\2Scripts\Coin.cs" />
     <Compile Include="Assets\2Scripts\OtherBall.cs" />
     <Compile Include="Assets\2Scripts\LifeCycle.cs" />
+    <Compile Include="Assets\2Scripts\CameraMove.cs" />
     <Compile Include="Assets\2Scripts\Actor.cs" />
     <Compile Include="Assets\2Scripts\Player.cs" />
     <Compile Include="Assets\2Scripts\MyBall.cs" />
@@ -66,7 +67,7 @@
     <Compile Include="Assets\2Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\2Scripts\LifeCycle2.cs" />
     <Compile Include="Assets\2Scripts\Move.cs" />
-    <Compile Include="Assets\2Scripts\CameraMove.cs" />
+    <Compile Include="Assets\2Scripts\GameManagerLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

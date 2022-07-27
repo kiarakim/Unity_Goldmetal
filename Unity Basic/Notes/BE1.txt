@@ -16,4 +16,18 @@ SetActive(bool) : 오브젝트 활성화 함수
 AudioSource : 사운드 재생 컴포넌드, AudioClip 필요
 AudioClip : 사운드 파일 컴포넌트
 
+4. 카메라
 
+5. 결승점
+
+
+형태가 없고 전반적인 로직을 가진 오브젝트를 '매니저'로 지정
+
+Find 계열 함수는 '부하'를 초래할 수 있으므로 피하는 것을 권장
+
+6. 장면이동
+SceneManager : 장면을 관리하는 기본 클래스
+LoadScene() : 주어진 장면을 불러오는 함수
+Scene을 불러오려면 꼭 Build Setting에서 추가
+
+7. 스테이지

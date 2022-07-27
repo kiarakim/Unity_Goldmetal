@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Transform playerTransform;
+    Vector3 offset; //고정값
+    void Awake()
     {
-        
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        offset = transform.position - playerTransform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        transform.position = playerTransform.position + offset;//카메라와 플레이어의 거리는 항상 이정도 유지한다.
     }
 }
